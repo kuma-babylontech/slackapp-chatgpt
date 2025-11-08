@@ -10,7 +10,8 @@ app = App(token=os.getenv("SLACK_BOT_TOKEN"))
 @app.event("app_mention")
 def handle_mention(event, say):
     user = event["user"]
-    say(f"Hello, <@{user}>!")
+    thread_ts = event["ts"]
+    say(thread_ts=thread_ts, text=f"Hello, <@{user}>!")
 
 if __name__ == "__main__":
     SocketModeHandler(app, os.getenv("SLACK_APP_TOKEN")).start()
