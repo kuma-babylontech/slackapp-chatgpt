@@ -10,10 +10,13 @@ colorama==0.4.6
 dataclasses-json==0.5.14
 frozenlist==1.8.0
 greenlet==3.2.4
+grpcio==1.76.0
 idna==3.11
 langchain==0.0.292
 langsmith==0.0.92
 marshmallow==3.26.1
+momento==1.9.2
+momento-wire-types==0.75.0
 multidict==6.7.0
 mypy-extensions==1.1.0
 numexpr==2.14.1
@@ -21,8 +24,10 @@ numpy==1.26.4
 openai==0.28.0
 packaging==25.0
 propcache==0.4.1
+protobuf==4.25.8
 pydantic==2.12.4
 pydantic-core==2.41.5
+pyjwt==2.10.1
 python-dotenv==1.0.0
 pyyaml==6.0.3
 requests==2.32.5
